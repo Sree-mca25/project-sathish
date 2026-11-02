@@ -1,0 +1,14 @@
+# Secrets never leave your machine — set these in the Vercel dashboard instead.
+.env
+.env.*
+!.env.example
+
+# Legacy SQLite database and its backup; the app now runs on Neon Postgres.
+*.db
+*.db-shm
+*.db-wal
+sathish-media-backup(1).json
+migration.js
+
+node_modules/
+DEPLOYMENT-NOTES.txt

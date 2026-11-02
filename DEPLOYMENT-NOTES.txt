@@ -1,0 +1,13 @@
+SATHISH MEDIA - corrected local project
+
+1. Install Node.js 20 or newer.
+2. Copy .env.example to .env and set your own secure SESSION_SECRET, ADMIN_EMAIL, and ADMIN_PASSWORD.
+3. Run npm install.
+4. Run node migration.js only if you want to import the backup. Existing non-empty tables are skipped.
+5. Run npm start and open http://localhost:3000/admin.html.
+
+Data backup counts verified in the included SQLite database:
+products 57, services 8, portfolio 6, arts 43, courses 4.
+
+Important: SQLite database files on many free web hosts are not persistent across restarts/redeploys.
+Before production deployment, configure a persistent hosted database and do not publish your .env or passwords.
